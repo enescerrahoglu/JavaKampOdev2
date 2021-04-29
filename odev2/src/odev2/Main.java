@@ -23,6 +23,8 @@ public class Main {
 		System.out.println(instructor.getBiography());
 		InstructorManager instructorManager = new InstructorManager();
 		instructorManager.addCourse("Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)");
+		userManager.logout(instructor);
+		
 		System.out.print("\n");
 		
 		userManager.login(student, student.getEmail(), student.getPassword());
@@ -30,6 +32,7 @@ public class Main {
 		studentManager.joinCourse("Yazýlým Geliþtirici Yetiþtirme Kampý (JAVA + REACT)");
 		student.setMessage("\"Hocam, tüm ödevleri tamamladým!\"");
 		studentManager.sendMessage(student, student.getMessage());
+		userManager.logout(student);
 		
 	}
 

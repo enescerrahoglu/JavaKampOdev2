@@ -12,4 +12,8 @@ public class UserManager {
 	public void login(User user, String email, String password) {
 		System.out.println(user.getFirstName() + " " + user.getLastName() + " sisteme giriþ saðladý!");
 	}
+	
+	public void logout(User user) {
+		System.out.println(user.getFirstName() + " " + user.getLastName() + " sistemden çýkýþ yaptý!");
+	}
 }
